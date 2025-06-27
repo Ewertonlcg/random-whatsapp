@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <script>
+    function redirecionarAleatorio() {
+      const links = [
+        "https://wa.me/5591993659627?text=Olá,%20quero%20entrar%20no%20grupo%201",
+        "https://wa.me/5591991936529?text=Olá,%20quero%20entrar%20no%20grupo%202",
+        "https://wa.me/5591991620764?text=Olá,%20quero%20entrar%20no%20grupo%203"
+      ];
+      const randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    }
+
+    window.onload = function() {
+      setTimeout(redirecionarAleatorio, 1000); // 1 segundo de delay
+    };
+  </script>
+</head>
+<body>
+  <h2 style="text-align:center;">Você está sendo redirecionado para um consultor...</h2>
+</body>
+</html>
